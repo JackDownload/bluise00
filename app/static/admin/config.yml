@@ -76,8 +76,8 @@ collections:
     sort: 'published_at:desc'
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: 'Published At', name: publishedAt, widget: date, format: 'Do MMM YYYY' 
-  - {label: 'Category', name: 'category', widget: 'relation', collection: 'categories', searchFields: 'name', valueField: 'name', multiple: true}
+      - { label: 'Published At', name: publishedAt, widget: date, format: 'Do MMM YYYY' }
+      - { label: 'Category', name: 'category', widget: 'relation', collection: 'categories', searchFields: 'name', valueField: 'name', multiple: true }
       - { label: Content, name: content, widget: markdown }
       - { label: 'Featured Image', name: featuredImage, widget: image, required: false }
       - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
