@@ -67,16 +67,17 @@ collections:
       - { label: 'Featured Image', name: featuredImage, widget: image, required: false }
       - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
       - { label: 'SEO Meta Image', name: seoMetaImage, widget: image, required: false }
-     collections:
-  - name: "recipes" # Used in routes, e.g., /admin/collections/blog
-    label: "Recipes" # Used in the UI
-    preview_path: "{{slug}}"
-    folder: "content/recipes" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "subtitle", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "featureImage", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}   
+  - name: 'recipe'
+    label: 'Recipe'
+    folder: 'app/content/recipe'
+    create: true
+    slug: '{{slug}}'
+    format: 'json'
+    sort: 'published_at:desc'
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: 'Published At', name: publishedAt, widget: date, format: 'Do MMM YYYY' }
+      - { label: Content, name: content, widget: markdown }
+      - { label: 'Featured Image', name: featuredImage, widget: image, required: false }
+      - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
+      - { label: 'SEO Meta Image', name: seoMetaImage, widget: image, required: false }
