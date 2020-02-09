@@ -35,3 +35,15 @@ interface Recipe {
   seoDescription?: string;
   seoMetaImage?: string;
 }
+
+
+interface Category {
+  title: string;
+  slug?: string;
+  excerpt?: string;
+  content: string;
+  featuredImage?: string;
+  seoDescription?: string;
+  seoMetaImage?: string;
+}
+
