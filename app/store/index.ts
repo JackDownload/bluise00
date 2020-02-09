@@ -55,7 +55,7 @@ export const actions: Actions<State, State> = {
       async GET_CATEGORIES_LIST({ commit }): Promise<void | Error> {
     // Use webpack to search the blog directory matching .json files
     const context = await require.context('@/content/category/', false, /\.json$/);
-    const categories = await getContent({ context, prefix: 'recipe' });
+    const categories = await getContent({ context, prefix: 'category' });
     commit('SET_CATEGORIES', categories);
   },
     async GET_RECIPES_LIST({ commit }): Promise<void | Error> {
