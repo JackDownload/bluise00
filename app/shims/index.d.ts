@@ -24,3 +24,14 @@ interface Page {
   seoDescription?: string;
   seoMetaImage?: string;
 }
+
+interface Recipe {
+  title: string;
+  subtitle?: string;
+  slug?: string;
+  content: string
+  categories: string;
+  featuredImage?: string;
+  seoDescription?: string;
+  seoMetaImage?: string;
+}
