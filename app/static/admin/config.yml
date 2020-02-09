@@ -82,8 +82,8 @@ collections:
       - { label: 'Featured Image', name: featuredImage, widget: image, required: false }
       - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
       - { label: 'SEO Meta Image', name: seoMetaImage, widget: image, required: false }
- - name: 'category'
-    label: 'Categories'
+  - name: 'category'
+    label: 'Category'
     folder: 'app/content/category'
     create: true
     slug: '{{slug}}'
