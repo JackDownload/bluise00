@@ -15,8 +15,8 @@ export interface State {
 export const appState = {
   pages: [],
   posts: [],    
-  recipes: [];
-  categories: [];
+  recipes: [],
+  categories: [],
 };
 
 export const mutations: MutationTree<State> = {
